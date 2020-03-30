@@ -169,6 +169,7 @@ input.passwordLogin{
 }
 
 button.submitLogin{
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     width: 150px;
@@ -200,8 +201,9 @@ button.submitLogin{
 
 .movieContainer h1{
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 5px;
+  padding-top: 5px;
   }
 
   .video{
@@ -213,6 +215,29 @@ button.submitLogin{
     width: 100%;
     margin-top: 5px;
   }
+
+  .selection{
+    padding-top: 10px;
+
+  }
+
+
+  .selection ul li{
+    text-align: center;
+  }
+
+  .selection li{
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+  }
+
+  .selection a{
+    text-decoration: none;
+    width: 1px;
+  }
+
+
 
   //kids
 
@@ -398,6 +423,7 @@ input.passwordLogin{
 }
 
 button.submitLogin{
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     width: 150px;
@@ -607,6 +633,7 @@ button.submitLogin{
   margin-top: 20px;
   width: 100%;
   height: 100%;
+  padding-bottom: 1%;
 }
 
 #loginForm h3{
@@ -631,6 +658,7 @@ input.passwordLogin{
 }
 
 button.submitLogin{
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     width: 150px;
@@ -642,10 +670,6 @@ button.submitLogin{
     box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
   }
  
- button.submit:hover{
-    cursor: pointer;
-  }
-
 //adult section
 
 .video h1{
