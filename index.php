@@ -60,7 +60,7 @@ confirm_logged_in_dash();
 </head>
 <body>
 <div class="logo">
-<a href="#"><img src="images/roku.svg"></img></a> 
+<a href="index.php"><img src="images/roku.svg"></img></a> 
 </div>
     <?php  if(!isset($_GET['kids'])):?>
   
@@ -96,8 +96,10 @@ confirm_logged_in_dash();
 
     <?php endwhile;?>
     <?php include 'templates/footer.php'; ?>
+   
     <?php endif;?>
     <?php  if(isset($_GET['kids'])):?>
+        <?php include 'templates/kidsHeader.php'; ?>
     <!-- please include header made specifically for the kids version -->
      <!-- template for the kids version of roku with all the following content fetched by the GetKid Movies function -->
         <?php while($row = $getMovies->fetch(PDO::FETCH_ASSOC)):?>
