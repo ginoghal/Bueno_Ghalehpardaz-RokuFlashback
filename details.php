@@ -2,12 +2,17 @@
 
 require_once 'load.php';
 
-if(isset($_GET['id'])){
-    $movie_table = 'tbl_movies';
-    $id = $_GET['id'];
-    $col = 'movies_id';
+if(isset($_GET['movie_id'])){
+    $movie_id = $_GET['movie_id'];
+    $type = 'movies';
 
-    $getMovies = getSingleMovie($movie_table, $col, $id);
+    $getMovies = getVideo($movie_id,$type);
+}
+if(isset($_GET['series_id'])){
+    $series_id = $_GET['series_id'];
+    $type = 'series';
+
+    $getMovies = getVideo($series_id,$type);
 }
 ?>
 
@@ -22,15 +27,12 @@ if(isset($_GET['id'])){
 <body>
 <?php include 'templates/header.php'?>
 
-<?php while($row = $getMovies->fetch(PDO::FETCH_ASSOC)):?>
+
+
     <div class="movie-item">
-    <img src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title']?>"/>
-        <h2><?php echo $row['movies_title']; ?></h2>
-        <h4><?php echo $row['movies_year']; ?></h4>
-        <p><?php echo $row['movies_storyline'];?></p>
-        <a href="index.php">Back..</a>
+    <?php echo $getMovies; ?>
     </div>
-    <?php endwhile;?>
+
 
     <?php include 'templates/footer.php';?>
     

@@ -8,25 +8,44 @@ function confirm_logged_in_dash(){
 confirm_logged_in_dash();
   
 
-    if(isset($_GET['filter'])){
-        $args = array(
-            'tbl'=>'tbl_movies',
-            'tbl2'=>'tbl_genre',
-            'tbl3'=>'tbl_mov_genre',
-            'col'=>'movies_id',
-            'col2'=>'genre_id',
-            'col3'=>'genre_name',
-            'filter'=>$_GET['filter']
-        );
+    if(isset($_GET['year'])){
+        $year = $_GET['year'];
+        
+        $tbl = 'tbl_movies';
+        
+        if(isset($_GET['series'])){
+            $year = $_GET['year'];
+            $tbl = 'tbl_series';
+        }
 
-        $getMovies = getMoviesByFilter($args);
+        $getMovies = getMoviesByyear($year,$tbl);
+       
     }else{
         $movie_table = 'tbl_movies';
         $getMovies = getAll($movie_table);
     }
     if(isset($_GET['kids'])){
         $getMovies = getKidMovies();
+        $getSeries = getKidSeries();
     }
+    if(isset($_GET['filter'])){
+        $tbl='tbl_movies';
+        $filter = $_GET['filter'];
+        $getMovies = getMoviesByFilter($filter,$tbl);
+    }
+    if(isset($_GET['series'])){
+        $tbl = 'tbl_series';
+        if(isset($_GET['year'])){
+        $year = $_GET['year'];
+        $getMovies = getMoviesByyear($year,$tbl);
+        }elseif(isset($_GET['filter'])){
+            // $filter = $_GET['filter'];
+            $getMovies = getMoviesByFilter($filter,$tbl);
+        }else{
+        $getMovies = getAll($tbl);
+        }
+    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -44,19 +63,37 @@ confirm_logged_in_dash();
 <a href="#"><img src="images/roku.svg"></img></a> 
 </div>
     <?php  if(!isset($_GET['kids'])):?>
+  
     <?php include 'templates/header.php'; ?>
+  
+
 
     
     <?php while($row = $getMovies->fetch(PDO::FETCH_ASSOC)):?>
     
         <!-- <video></video> -->
+        <?php if(!isset($_GET['series'])):?>
         <div class="movie-item">
             <img src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>">
             <h2><?php echo $row['movies_title']; ?></h2>
             <h4><?php echo $row['movies_year']; ?></h4>
-            <a href="details.php?id=<?php echo $row['movies_id'];?>">Watch</a>
+           
+            <a href="details.php?movie_id=<?php echo $row['movies_id'];?>">Watch</a>
         </div>
-    </div>
+  
+        <?php endif ;?>
+
+        <?php if(isset($_GET['series'])):?>
+            <div class="movie-item">
+            <img src="images/<?php echo $row['series_cover'];?>" alt="<?php echo $row['series_title'];?>">
+            <h2><?php echo $row['series_title']; ?></h2>
+            <h4><?php echo $row['series_year']; ?></h4>
+           
+            <a href="details.php?series_id=<?php echo $row['series_id'];?>">Watch</a>
+        </div>
+        <?php endif;?>
+
+
     <?php endwhile;?>
     <?php include 'templates/footer.php'; ?>
     <?php endif;?>
@@ -67,6 +104,11 @@ confirm_logged_in_dash();
    
             <img src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>">
     <?php endwhile;?>
+    <!-- series for kids -->
+    <?php while($row = $getSeries->fetch(PDO::FETCH_ASSOC)):?>
+   
+   <img src="images/<?php echo $row['series_cover'];?>" alt="<?php echo $row['series_title'];?>">
+<?php endwhile;?>
     <?php endif;?>
     
  

@@ -1,8 +1,31 @@
-# Bueno_Ghalehpardaz-RokuFlashback
+#### PHP Movie Review
+This is the Docker environment set up for Movie Review
 
 
-Authors: Gino Ghalehpardaz and Guillerme Bueno
+#### Prerequisites
+1. Install `Docker` from [https://docs.docker.com/install/] 
+2. IF you are in Linux, install `docker-compose` from [https://docs.docker.com/install/]
 
-For this project we are creating a roku app that plays Movie trailers, tv show trailers and music.
 
-The content is sorted in 2 distinctive ways. The first by year it was released. The second is that it is currated (based on the content rating) for both children and adults and based on whichever of the account you use you will recieve content that goes with that given age group.
+#### Set up
+1. Clone the repo
+   ```
+   git clone https://github.com/spiderPan/Fanshawe-IDP-Inclass.git
+   ```
+2. Open the folder and run docker-compose
+   ```
+   cd movies_cms
+   docker-compose up
+   ```
+3. When you finished work, you can turn if off by doing 
+   ```
+   docker-compose down
+   ```
+
+#### URLs
+1. Your project is up in `http://localhost:8010` which is mapping to the `movies_cms` folder
+2. The phpMyAdmin is in `http://localhost:8011` with the credential of 
+```
+Username: docker_u
+Password: docker_p
+```
