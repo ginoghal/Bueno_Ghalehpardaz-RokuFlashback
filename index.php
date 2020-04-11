@@ -112,10 +112,12 @@ confirm_logged_in_dash();
     <?php endif;?>
     <?php  if(isset($_GET['kids'])):?>
         <?php include 'templates/kidsHeader.php'; ?>
-        <?php include 'templates/footer.php'; ?>
+
    
    
     <?php endif;?>
+
+    <?php include 'templates/footer.php'; ?>
     
  
 </body>

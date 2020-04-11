@@ -36,7 +36,7 @@ if(isset($_GET['series_id'])){
     <?php if(!isset($_GET['Pcontrols'])|| !isset($_GET['editacc'])):?>
     <h3>Parental Controls <a href="userDashboard.php?Pcontrols=true">*</a></h3>
     <h3>Edit My account <a href="userDashboard.php?editacc=true">*</a></h3>
-    <a href="index.php">Go Back</a>
+   <div class="return"> <a href="index.php">Go Back</a> </div>
     <?php endif;?>
 
     <?php if(isset($_GET['Pcontrols'])):?>
@@ -57,6 +57,8 @@ if(isset($_GET['series_id'])){
         <?php redirect_to('admin/admin_edituser.php'); ?>
     <?php endif;?>
     </div>
+
+    <?php include 'templates/footer.php'; ?>
 
 </body>
 </html>
