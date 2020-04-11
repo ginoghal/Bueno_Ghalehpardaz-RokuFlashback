@@ -1,6 +1,7 @@
 <div class="cloud">
-<img src="images/cloud_Kids.png"></img>
+<img src="images/cloud.svg"></img>
 </div>
+
 <body class="kidsColor">
 
 <?php 
@@ -25,11 +26,11 @@ $user_avatar = getUserPic($id);
 ?>
 <header>
     <nav class="filterNavKids">
-    <a href="userDashboard.php"><img class="profilePic" src="images/<?php echo implode($user_avatar);?>" alt="Profile Pic"></a>
+ 
     
     
     <ul>
-    
+    <a href="userDashboard.php"><img class="profilePic" src="images/<?php echo implode($user_avatar);?>" alt="Profile Pic"></a> 
     <li><a href="admin/admin_logout.php">Logout</a></li>
     <li><a href="index.php?series=true">TV Series</a></li>
     <li><a href="index.php">Movies</a></li>
