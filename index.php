@@ -100,18 +100,8 @@ confirm_logged_in_dash();
     <?php endif;?>
     <?php  if(isset($_GET['kids'])):?>
         <?php include 'templates/kidsHeader.php'; ?>
-    <!-- please include header made specifically for the kids version -->
-    
-     <!-- template for the kids version of roku with all the following content fetched by the GetKid Movies function -->
-        <?php while($row = $getMovies->fetch(PDO::FETCH_ASSOC)):?>
    
-            <img src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>">
-    <?php endwhile;?>
-    <!-- series for kids -->
-    <?php while($row = $getSeries->fetch(PDO::FETCH_ASSOC)):?>
    
-   <img src="images/<?php echo $row['series_cover'];?>" alt="<?php echo $row['series_title'];?>">
-<?php endwhile;?>
     <?php endif;?>
     
  

@@ -29,7 +29,7 @@ $user_avatar = getUserPic($id);
     
     
     <ul>
-    <li><a href="userDashboard.php"><img class="profilePic" src="images/<?php echo implode($user_avatar);?>" alt="Profile Pic"></a></li>
+    
     <li><a href="admin/admin_logout.php">Logout</a></li>
     <li><a href="index.php?series=true">TV Series</a></li>
     <li><a href="index.php">Movies</a></li>
@@ -78,37 +78,21 @@ $user_avatar = getUserPic($id);
     <div class="movie-itemKids">
         <img src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>">
         <h2><?php echo $row['movies_title']; ?></h2>
-        <h4><?php echo $row['movies_year']; ?></h4>
+       
        
         <a href="details.php?movie_id=<?php echo $row['movies_id'];?>">Watch</a>
     </div>
 
     <?php endif ;?>
-
-    <?php if(isset($_GET['series'])):?>
-        <div class="movie-itemKids">
-        <img src="images/<?php echo $row['series_cover'];?>" alt="<?php echo $row['series_title'];?>">
-        <h2><?php echo $row['series_title']; ?></h2>
-        <h4><?php echo $row['series_year']; ?></h4>
-       
-        <a href="details.php?series_id=<?php echo $row['series_id'];?>">Watch</a>
-    </div>
-    <?php endif;?>
     <?php endwhile;?>
 
-    <?php while($row = $getMovies->fetch(PDO::FETCH_ASSOC)):?>
-<div class="movie-itemKids">
-   <img src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>">
-   <h2><?php echo $row['series_title']; ?></h2>
-    <h4><?php echo $row['series_year']; ?></h4>
-
-    <a href="details.php?series_id=<?php echo $row['series_id'];?>">Watch</a>
-    </div>
-<?php endwhile;?>
+    
 <!-- series for kids -->
 <?php while($row = $getSeries->fetch(PDO::FETCH_ASSOC)):?>
 
 <img src="images/<?php echo $row['series_cover'];?>" alt="<?php echo $row['series_title'];?>">
+<h2><?php echo $row['series_title']; ?></h2>
+<a href="details.php?series_id=<?php echo $row['series_id'];?>">Watch</a>
 <?php endwhile;?>
 
 
