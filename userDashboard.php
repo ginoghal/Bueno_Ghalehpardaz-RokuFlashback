@@ -23,9 +23,15 @@ if(isset($_GET['series_id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <title>User Dashboard</title>
 </head>
 <body>
+<div class="logo">
+<a href="index.php"><img src="images/roku.svg"></img></a> 
+</div>
+<div class="dash">
     <h1>User Dashboard</h1>
     <?php if(!isset($_GET['Pcontrols'])|| !isset($_GET['editacc'])):?>
     <h3>Parental Controls <a href="userDashboard.php?Pcontrols=true">*</a></h3>
@@ -50,7 +56,7 @@ if(isset($_GET['series_id'])){
     <?php if(isset($_GET['editacc'])):?>
         <?php redirect_to('admin/admin_edituser.php'); ?>
     <?php endif;?>
-
+    </div>
 
 </body>
 </html>
