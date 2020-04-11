@@ -21,17 +21,23 @@ if(isset($_GET['series_id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to the movie CMS</title>
+    <title>Welcome to Roku Flashback</title>
 </head>
 <body>
+<div class="logo">
+<a href="index.php"><img src="images/roku.svg"></img></a> 
+</div>
 <?php include 'templates/header.php'?>
 
 
 
-    <div class="movie-item">
+    <div class="movie-itemVideo">
     <?php echo $getMovies; ?>
     </div>
+    
 
 
     <?php include 'templates/footer.php';?>
