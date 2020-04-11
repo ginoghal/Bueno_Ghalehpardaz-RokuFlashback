@@ -2,7 +2,7 @@ Roku Flashback App
 by Guillerme Da-Silva and Gino Ghalehpardaz
 MMED 5006
 
-Roku Flashback app contains movies, music and tv show trailers, songs and/or commercials from some of the biggest and most relevant people in the world. There is content from the 50, 60, 70, 80 and 90s.
+Roku Flashback app contains movies, music and tv show trailers, songs and/or commercials from some of the biggest and most relevant people in the world. There is content from the 50s, 60s, 70s, 80s and 90s.
 
 Our Roku Flashback contains an Adult section that has access to all the content and a filtered out kids version.
 
@@ -31,14 +31,18 @@ This is the Docker environment set up for Movie Review
    cd movies_cms
    docker-compose up
    ```
-3. When you finished work, you can turn if off by doing 
+3. When you're finished, you can turn if off by doing 
    ```
    docker-compose down
    ```
 
+### Alternative Set up
+For an alternative other than using docker, you may clone the repo and place it inside the MAMP/htdocs(Mac) or wamp64/www(windows) folder. 
+Start WAMP/MAMP and acces it through `http://localhost/Bueno_Ghalehpardaz-RokuFlashback`
+
 #### URLs
-1. Your project is up in `http://localhost:8010` which is mapping to the `movies_cms` folder
-2. The phpMyAdmin is in `http://localhost:8011` with the credential of 
+1. The project is up in `http://localhost:8010` which is mapping to the `Bueno_Ghalehpardaz-RokuFlashback` folder
+2. phpMyAdmin is in `http://localhost:8011` with the credential of 
 ```
 Username: docker_u
 Password: docker_p
