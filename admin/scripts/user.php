@@ -12,6 +12,26 @@ require_once 'encryption.php';
 // error_reporting(-1);
 
 
+function blacklist($type,$bl_id){
+    $pdo = Database::getInstance()->getConnection();
+    if($type=='movies'){
+        $bl_query = 'UPDATE tbl_movies ';
+    }
+    if($type=='series'){
+        $bl_query = 'UPDATE tbl_series '; 
+    }
+
+    $bl_query .= 'SET locked = 0 WHERE '.$type.'_id = :bl_id';
+    $bl_exec = $pdo->prepare($bl_query);
+    $bl_exec->execute(
+        array(
+            ':bl_id'=>$bl_id
+        )
+        );
+
+}
+
+
 function createUser($fname, $username, $email){
     $pdo = Database::getInstance()->getConnection();
     //TODO:Create a random password

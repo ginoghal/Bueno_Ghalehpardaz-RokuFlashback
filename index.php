@@ -35,11 +35,12 @@ confirm_logged_in_dash();
     }
     if(isset($_GET['series'])){
         $tbl = 'tbl_series';
+
         if(isset($_GET['year'])){
         $year = $_GET['year'];
         $getMovies = getMoviesByyear($year,$tbl);
+
         }elseif(isset($_GET['filter'])){
-            // $filter = $_GET['filter'];
             $getMovies = getMoviesByFilter($filter,$tbl);
         }else{
         $getMovies = getAll($tbl);
@@ -72,7 +73,7 @@ confirm_logged_in_dash();
     <?php while($row = $getMovies->fetch(PDO::FETCH_ASSOC)):?>
     
         <!-- <video></video> -->
-        <?php if(!isset($_GET['series'])):?>
+        <?php if(!isset($_GET['series']) && !isset($_GET['music'])):?>
         <div class="movie-item">
             <img src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>">
             <h2><?php echo $row['movies_title']; ?></h2>

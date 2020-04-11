@@ -23,6 +23,8 @@ function getVideo($id, $type){
         $queryVideo.='movies_trailer FROM tbl_movies WHERE movies_id = :id';
     }elseif($type=='series'){
         $queryVideo.='series_trailer FROM tbl_series WHERE series_id = :id';
+    }elseif($type=='music'){
+        $queryVideo.='music_audio FROM tbl_music WHERE music_id = :id';
     }
     $queryVideo_exec = $pdo->prepare($queryVideo);
     $queryVideo_exec->execute(
@@ -40,7 +42,7 @@ function getVideo($id, $type){
 
 function getKidMovies(){
     $pdo = Database::getInstance()->getConnection();
-    $queryAll = 'SELECT * from tbl_movies WHERE for_kids = "yes"';
+    $queryAll = 'SELECT * from tbl_movies WHERE for_kids = "yes" AND locked IS null';
      $results = $pdo->query($queryAll);
      
     
@@ -52,7 +54,7 @@ function getKidMovies(){
 }
 function getKidSeries(){
     $pdo = Database::getInstance()->getConnection();
-    $queryAll = 'SELECT * from tbl_series WHERE for_kids = "yes"';
+    $queryAll = 'SELECT * from tbl_series WHERE for_kids = "yes" AND locked IS null';
      $results = $pdo->query($queryAll);
      
     
