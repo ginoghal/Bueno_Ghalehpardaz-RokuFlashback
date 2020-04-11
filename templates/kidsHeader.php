@@ -89,10 +89,11 @@ $user_avatar = getUserPic($id);
     
 <!-- series for kids -->
 <?php while($row = $getSeries->fetch(PDO::FETCH_ASSOC)):?>
-
+    <div class="movie-itemKids">
 <img src="images/<?php echo $row['series_cover'];?>" alt="<?php echo $row['series_title'];?>">
 <h2><?php echo $row['series_title']; ?></h2>
 <a href="details.php?series_id=<?php echo $row['series_id'];?>">Watch</a>
+</div>
 <?php endwhile;?>
 
 
