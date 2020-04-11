@@ -12,6 +12,11 @@ The design is for the adults is dark but inviting and is meant to be simple, but
 Both versions are also different colored and the kids buttons are bigger and bolder to provide an easier and more enjoyable experience.
 
 
+To Login:
+Username: gui
+password: 123
+
+
 #### PHP Movie Review
 This is the Docker environment set up for Movie Review
 
