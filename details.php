@@ -14,6 +14,12 @@ if(isset($_GET['series_id'])){
 
     $getMovies = getVideo($series_id,$type);
 }
+if(isset($_GET['music_id'])){
+    $music_id = $_GET['music_id'];
+    $type = 'music';
+
+    $getMovies = getVideo($music_id,$type);
+}
 ?>
 
 <!DOCTYPE html>

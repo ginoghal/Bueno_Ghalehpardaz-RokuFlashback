@@ -27,6 +27,7 @@ $user_avatar = getUserPic($id);
     <li><a href="userDashboard.php"><img class="profilePic" src="images/<?php echo implode($user_avatar);?>" alt="Profile Pic"></a></li>
     <li><a href="admin/admin_logout.php">Logout</a></li>
     <li><a href="index.php?series=true">TV Series</a></li>
+    <li><a href="index.php?music=true">Music</a></li>
     <li><a href="index.php">Movies</a></li>
     <li><a href="index.php?kids=true">RokuKids</a></li></ul>
     

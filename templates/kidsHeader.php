@@ -1,8 +1,4 @@
-<div class="cloud">
-<img src="images/cloud.svg"></img>
-</div>
 
-<body class="kidsColor">
 
 <?php 
 function getUserPic($id){
@@ -21,9 +17,15 @@ function getUserPic($id){
 }
 $id = $_SESSION['user_id'];
 $user_avatar = getUserPic($id);
+$getMusic = getKidMusic();
 
 
 ?>
+<div class="cloud">
+<img src="images/cloud.svg"></img>
+</div>
+
+<body class="kidsColor">
 <header>
     <nav class="filterNavKids">
  
@@ -95,6 +97,15 @@ $user_avatar = getUserPic($id);
 <h2><?php echo $row['series_title']; ?></h2>
 <a href="details.php?series_id=<?php echo $row['series_id'];?>">Watch</a>
 </div>
+<?php endwhile;?>
+
+<!-- Music for kids -->
+<?php while($row = $getMusic->fetch(PDO::FETCH_ASSOC)):?>
+    <div class="movie-itemKids">
+        <img src="images/<?php echo $row['music_album'];?>" alt="<?php echo $row['music_title'];?>">
+        <a href="details.php?music_id=<?php echo $row['music_id'];?>">Watch</a>
+        </div>
+        
 <?php endwhile;?>
 
 

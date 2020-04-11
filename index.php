@@ -27,6 +27,7 @@ confirm_logged_in_dash();
     if(isset($_GET['kids'])){
         $getMovies = getKidMovies();
         $getSeries = getKidSeries();
+       
     }
     if(isset($_GET['filter'])){
         $tbl='tbl_movies';
@@ -45,6 +46,10 @@ confirm_logged_in_dash();
         }else{
         $getMovies = getAll($tbl);
         }
+    }
+    if(isset($_GET['music'])){
+        $tbl = 'tbl_music';
+        $getMovies = getAll($tbl);
     }
     
 ?>
@@ -93,7 +98,12 @@ confirm_logged_in_dash();
             <a href="details.php?series_id=<?php echo $row['series_id'];?>">Watch</a>
         </div>
         <?php endif;?>
+        <?php if(isset($_GET['music'])):?>
+            <img src="images/<?php echo $row['music_album'];?>" alt="<?php echo $row['music_title'];?>">
 
+            <a href="details.php?music_id=<?php echo $row['music_id'];?>">Listen</a>
+
+        <?php endif;?>
 
     <?php endwhile;?>
 
