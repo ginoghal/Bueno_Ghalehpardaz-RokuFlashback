@@ -1,5 +1,5 @@
 
-<?php 
+<?php                          
 function getUserPic($id){
     $pdo = Database::getInstance()->getConnection();
     $avatar_stmt = 'SELECT user_avatar from tbl_user WHERE user_id = :id';
