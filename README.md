@@ -9,12 +9,17 @@ Our Roku Flashback contains an Adult section that has access to all the content 
 
 Design:
 The design is for the adults is dark but inviting and is meant to be simple, but clean and professional.
+We kept all the menu options at the top of the page so that you can view categories if you wanted to change your video without scrolling from it.
 Both versions are also different colored and the kids buttons are bigger and bolder to provide an easier and more enjoyable experience.
+The kids version color is lighter to be more inviting and easier on the eyes.
 
+Instructions: 
 
 To Login:
 Username: gui
 password: 123
+
+******************************************************************************************************************************
 
 
 #### PHP Movie Review
