@@ -117,6 +117,8 @@ font-size: 20px;
 .filterNav{
     width: 100%;
     margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .filterNav ul{
     margin-bottom: 15px;
@@ -135,20 +137,16 @@ font-size: 20px;
     list-style-type: none;
 }
 
-
-
 ul.cate h1{
     text-align: center;
     padding-bottom: 20px;
 }
-
 
 .ul.cate{
     margin-top: 20px;
     font-size: 20px;
     font-size: 20px;
 }
-
 
 .filterNav a{
     text-decoration: none;
@@ -158,6 +156,7 @@ ul.cate h1{
     padding-top: 20px;
     padding-left: 20px;
 padding-right: 20px;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .filterNavKids{
@@ -179,6 +178,11 @@ padding-right: 20px;
     font-size: 20px;
     display: inline;
     list-style-type: none;
+}
+
+.filterNavKids ul li a{
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .filterNavKids a{
@@ -277,12 +281,26 @@ ul.kid h1{
     font-size: 18px;
     margin-top: 5px;
     padding-left: 1px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .movie-itemKids h4{
     color: #32CD32;
     font-size: 18px;
     margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+//video section
+
+.movie-itemVideo{
+   margin: 0 auto;
+   display: block;
+}
+
+.movie-itemVideo.iframe{
+    width: 250px;
+
 }
 
 footer{
@@ -413,6 +431,12 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
         padding-left: 25px;
         padding-right: 25px;
     }
+
+
+.filterNavKids ul li a{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
     
 
 .filterNav ul{
@@ -505,16 +529,18 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
 }
 
 .movie-itemKids h2{
-    color: white;
-    font-size: 15px;
+    color: #A38BC4;
+    font-size: 20px;
     margin-top: 5px;
     padding-left: 1px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .movie-itemKids h4{
-    color: white;
-    font-size: 18px;
+    color: #32CD32;
+    font-size: 20px;
     margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer{
@@ -599,6 +625,12 @@ footer{
     padding-right: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.filterNavKids ul li a{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+    
 
 .sign h1{
     text-align: center;
@@ -727,16 +759,18 @@ font-size: 20px;
 }
 
 .movie-itemKids h2{
-    color: white;
-    font-size: 15px;
+    color: #A38BC4;
+    font-size: 24px;
     margin-top: 5px;
     padding-left: 1px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .movie-itemKids h4{
-    color: white;
-    font-size: 18px;
+    color: #32CD32;
+    font-size: 24px;
     margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
     footer{

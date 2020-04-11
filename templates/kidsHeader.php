@@ -25,6 +25,7 @@ $user_avatar = getUserPic($id);
 ?>
 <header>
     <nav class="filterNavKids">
+    <a href="userDashboard.php"><img class="profilePic" src="images/<?php echo implode($user_avatar);?>" alt="Profile Pic"></a>
     
     
     <ul>
