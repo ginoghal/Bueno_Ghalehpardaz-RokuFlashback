@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="public/css/reset.css"> -->
+    <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="../public/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Roku Flashback App</title>
@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
 <body>
 
 <div class="logo">
-<a href="#"><img src="../images/roku.svg"></img></a> 
+<a href="admin_login.php"><img src="../images/roku.svg"></img></a> 
 </div>
 
 <div class="sign">
@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
     <label class="loginLabel"><h5>Password:</h5></label><br>
     <input type="password" name="password" class="passwordInput" value=""> <br>
 
-    <button class="submitLogin" formmethod="post" name="submit">Log In</button>
+    <button class="submitLogin" formmethod="post" name="submit">Login</button>
     </form>
 </form>
 </div>

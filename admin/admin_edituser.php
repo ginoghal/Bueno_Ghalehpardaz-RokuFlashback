@@ -22,11 +22,20 @@ if(isset($_POST['submit'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to our Roku site</title>
     <title>Edit User</title>
 </head>
 <body>
+<div class="logo">
+<a href="index.php"><img src="../images/roku.svg"></img></a> 
+</div>
+
+<div class="editMe">
 <h2>Edit User</h2>
 <?php echo !empty($message)? $message:'';?>
 
@@ -48,6 +57,7 @@ if(isset($_POST['submit'])){
     <input type="password" name="password" value="<?php echo $user_info['user_pass'];?>"><br><br>
 
     <button type="submit" name="submit">Edit Account</button>
+</div>
     <?php endwhile;?>
 <?php endif;?>
     </form>

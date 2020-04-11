@@ -25,7 +25,6 @@ body.kidsColor{
     flex-wrap: wrap;
 }
 
-
 h7{
     color: red;
     padding-left: 15%;
@@ -303,9 +302,11 @@ ul.kid h1{
    display: block;
 }
 
-.movie-itemVideo.iframe{
-    width: 250px;
-
+.movie-itemVideo iframe{
+    margin: 0 auto;
+    display: block;
+    width: 375px;
+    height: 200px;
 }
 
 //dashboard
@@ -333,6 +334,63 @@ ul.kid h1{
     padding-top: 20px;
     padding-left: 10px;
 }
+
+.return{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.return a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
+//edit user
+
+div.editMe{
+    margin: 20px auto;
+    display: block;
+    width: 90%;
+    background-color: #662D91;
+    height: 85%;
+}
+
+div.editMe h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.editMe label {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    display: block;
+    padding-bottom: 1px;
+}
+
+div.editMe input{
+    margin: 0 auto;
+    display: block;
+    width: 95%;
+}
+
+div.editMe button{
+    background-color: whitesmoke;
+    width: 95%;
+    height: 50px;
+    margin-top: -10px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
+cursor: cursor;}
 
 //footer
 
@@ -362,6 +420,9 @@ header{
         width: 20%;
         padding-top: 10px;
         padding-left: 10px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+        display: block;
       }
 
 // .filterNav li:hover{
@@ -377,14 +438,14 @@ header{
 
 
 .cloud{
-    margin-left: -1%;
+    margin-left: 52%;
     margin-top: -20px;
 }
 
 .cloud img{
     width: 75px;
     margin-top: -30px;
-    margin-left: 170px;
+    margin-left: 80px;
 
 }
 
@@ -493,7 +554,7 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
         text-decoration: none;
         color: black;
         text-align: center;
-        font-size: 22px;
+        font-size: 17px;
         padding-top: 20px;
         padding-left: 25px;
         padding-right: 25px;
@@ -554,7 +615,7 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
 .movie-itemKids a{
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: #A38BC4;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
@@ -583,6 +644,20 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+//video
+
+.movie-itemVideo{
+    margin: 0 auto;
+    display: block;
+ }
+ 
+ .movie-itemVideo iframe{
+     margin: 0 auto;
+     display: block;
+     width: 700px;
+     height: 400px;
+ }
+
 //dashboard
 
 .dash{
@@ -607,13 +682,31 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
     padding-top: 20px;
     padding-left: 10px;
 }
+//return
+
+.return{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.return a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+    
+}
 
 //footer
 
 footer{
  background-color:$mainC;
         width: 100vw;
-        margin-top: 5%;
+        // margin-top: 100%;
         text-align: center;
         color: black;
         font-size: 17px;
@@ -632,11 +725,13 @@ footer{
         width: 10%;
         padding-top: 10px;
         padding-left: 10px;
+        margin: 0 auto;
+        display: block;
       }
 
 
       .cloud{
-        margin-left: -1%;
+        margin-left: 45%;
         margin-top: -20px;
     }
     
@@ -819,11 +914,11 @@ font-size: 20px;
 .movie-itemKids a{
     text-decoration: none;
     color: white;
-    background-color: black;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    background-color: #A38BC4;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     border-radius: 15px;
     margin-top: 15px;
     text-align: center;
@@ -839,6 +934,7 @@ font-size: 20px;
     margin-top: 5px;
     padding-left: 1px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .movie-itemKids h4{
@@ -874,12 +970,31 @@ font-size: 20px;
     padding-left: 10px;
 }
 
+//return
+
+.return{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.return a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+    
+}
+
 //footer
 
     footer{
         background-color:$mainC;
         width: 100vw;
-        margin-top: 5%;
+        // margin-top: 100%;
         text-align: center;
         color: black;
         font-size: 17px;
