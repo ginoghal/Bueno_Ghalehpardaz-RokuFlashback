@@ -1,3 +1,17 @@
+Roku Flashback App
+by Guillerme Da-Silva and Gino Ghalehpardaz
+MMED 5006
+
+Roku Flashback app contains movies, music and tv show trailers, songs and/or commercials from some of the biggest and most relevant people in the world. There is content from the 50, 60, 70, 80 and 90s.
+
+Our Roku Flashback contains an Adult section that has access to all the content and a filtered out kids version.
+
+
+Design:
+The design is for the adults is dark but inviting and is meant to be simple, but clean and professional.
+Both versions are also different colored and the kids buttons are bigger and bolder to provide an easier and more enjoyable experience.
+
+
 #### PHP Movie Review
 This is the Docker environment set up for Movie Review
 
