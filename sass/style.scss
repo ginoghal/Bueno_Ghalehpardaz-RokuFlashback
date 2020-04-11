@@ -1,13 +1,17 @@
 $bg: #262626;
 $mainC: #662D91;
+$kids: #A38BC4;
 
 //login
 
 html,body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    background-color: $bg;
 }
 
 body.kidsColor{
@@ -23,6 +27,13 @@ body.kidsColor{
 h7{
     color: red;
     padding-left: 15%;
+}
+
+.cloud img{
+    width: 100px;
+    margin-top: -55px;
+    position: absolute;
+    margin-left: 150px;
 }
 
 .sign h1{
@@ -43,6 +54,7 @@ h7{
   .profilePic{
       width: 15%;
   }
+
 
   #loginForm h3{
     text-align: center;
@@ -100,15 +112,7 @@ font-size: 20px;
     padding-top: 10px;
   }
 
-html,body{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: $bg;
-}
+
 
 .filterNav{
     width: 100%;
@@ -132,20 +136,19 @@ html,body{
 }
 
 
+
 ul.cate h1{
     text-align: center;
     padding-bottom: 20px;
 }
-// .filterNav li:hover{
-//     padding: 1px;
-//     background-color: grey;
-// }
+
 
 .ul.cate{
     margin-top: 20px;
     font-size: 20px;
     font-size: 20px;
 }
+
 
 .filterNav a{
     text-decoration: none;
@@ -155,6 +158,49 @@ ul.cate h1{
     padding-top: 20px;
     padding-left: 20px;
 padding-right: 20px;
+}
+
+.filterNavKids{
+    width: 100%;
+    margin-top: 20px;
+}
+.filterNavKids ul{
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #A38BC4;
+    text-align: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filterNavKids li{
+    margin-right: 10px;
+    font-size: 20px;
+    display: inline;
+    list-style-type: none;
+}
+
+.filterNavKids a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 20px;
+padding-right: 20px;
+}
+
+ul.kid h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.ul.kid{
+    margin-top: 20px;
+    font-size: 20px;
+    font-size: 20px;
 }
 
 .movie-block{
@@ -200,6 +246,45 @@ padding-right: 20px;
     margin-top: 5px;
 }
 
+.movie-itemKids{
+    width: 50%;
+    margin-top: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-itemKids a{
+    text-decoration: none;
+    color: white;
+    background-color: #A38BC4;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.movie-itemKids img{
+    width: 80%;
+    margin-top: -100%;
+}
+
+.movie-itemKids h2{
+    color: #A38BC4;
+    font-size: 18px;
+    margin-top: 5px;
+    padding-left: 1px;
+}
+
+.movie-itemKids h4{
+    color: #32CD32;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
 footer{
     background-color:$mainC;
     width: 100vw;
@@ -208,6 +293,9 @@ footer{
     color: black;
     font-size: 17px;
 }
+
+
+
 
 @media only screen and (min-device-width: 768px ){
 
@@ -234,6 +322,13 @@ header{
 
 .profilePic{
     width: 10%;
+}
+
+.cloud img{
+    width: 90px;
+    margin-top: -55px;
+    position: absolute;
+    margin-left: 165px;
 }
 
 .sign h1{
@@ -299,6 +394,27 @@ color: white;
 box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
     }
 
+    .filterNavKids ul{
+        margin-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #A38BC4;
+        text-align: center;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .filterNavKids a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        font-size: 22px;
+        padding-top: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+
 .filterNav ul{
         margin-bottom: 15px;
         padding-top: 20px;
@@ -362,6 +478,45 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
     margin-top: 5px;
 }
 
+.movie-itemKids{
+    width: 33%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-itemKids a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.movie-itemKids img{
+    width: 80%;
+    margin-top: -10%;
+}
+
+.movie-itemKids h2{
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    padding-left: 1px;
+}
+
+.movie-itemKids h4{
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
 footer{
  background-color:$mainC;
         width: 100vw;
@@ -385,6 +540,13 @@ footer{
         padding-top: 10px;
         padding-left: 10px;
       }
+
+      .cloud img{
+        width: 75px;
+        margin-top: -50px;
+        position: absolute;
+        margin-left: 165px;
+    }
 //login
 
 .profilePic{
@@ -407,6 +569,27 @@ footer{
 }
 
 .filterNav a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filterNavKids ul{
+    // margin: 0;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #A38BC4;
+    text-align: center;
+    width: 100%;
+}
+
+.filterNavKids a{
     text-decoration: none;
     color: black;
     text-align: center;
@@ -512,6 +695,45 @@ font-size: 20px;
 }
 
 .movie-item h4{
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.movie-itemKids{
+    width: 20%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-itemKids a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.movie-itemKids img{
+    width: 80%;
+    margin-top: -10%;
+}
+
+.movie-itemKids h2{
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    padding-left: 1px;
+}
+
+.movie-itemKids h4{
     color: white;
     font-size: 18px;
     margin-top: 5px;
