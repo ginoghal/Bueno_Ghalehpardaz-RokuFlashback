@@ -99,10 +99,11 @@ confirm_logged_in_dash();
         </div>
         <?php endif;?>
         <?php if(isset($_GET['music'])):?>
+            <div class="movie-item">
             <img src="images/<?php echo $row['music_album'];?>" alt="<?php echo $row['music_title'];?>">
 
             <a href="details.php?music_id=<?php echo $row['music_id'];?>">Listen</a>
-
+            </div>
         <?php endif;?>
 
     <?php endwhile;?>
