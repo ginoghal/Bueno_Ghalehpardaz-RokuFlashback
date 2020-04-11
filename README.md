@@ -12,6 +12,7 @@ The design is for the adults is dark but inviting and is meant to be simple, but
 We kept all the menu options at the top of the page so that you can view categories if you wanted to change your video without scrolling from it.
 Both versions are also different colored and the kids buttons are bigger and bolder to provide an easier and more enjoyable experience.
 The kids version color is lighter to be more inviting and easier on the eyes.
+Video controls are that of youtube because it is one of the most widely recognizable video controls and by being so recognizable makes it easy to use.
 
 Instructions: 
 
