@@ -43,13 +43,13 @@ if(isset($_POST['submit'])){
 
 <div class="login">
 <form id="loginForm">
-    <?php echo !empty($message)?$message:'';?>
+   <h7> <?php echo !empty($message)?$message:'';?> </h7>
     <form action="admin_login.php" method="post">
-    <label>Username:</label><br>
-    <input type="text" name="username" value=""><br>
+    <label class="loginLabel"><h5>Username:</h5></label><br>
+    <input type="text" name="username" class="usernameInput" value=""><br>
 
-    <label>Password:</label><br>
-    <input type="password" name="password" value=""> <br>
+    <label class="loginLabel"><h5>Password:</h5></label><br>
+    <input type="password" name="password" class="passwordInput" value=""> <br>
 
     <button class="submitLogin" formmethod="post" name="submit">Log In</button>
     </form>
