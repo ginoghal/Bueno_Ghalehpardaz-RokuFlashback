@@ -17,8 +17,8 @@ Video controls are that of youtube because it is one of the most widely recogniz
 Instructions: 
 
 To Login:
-Username: gui
-password: 123
+Username: foo
+password: bar
 
 ******************************************************************************************************************************
 
