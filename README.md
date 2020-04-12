@@ -20,6 +20,11 @@ To Login:
 Username: foo
 password: bar
 
+alt Username: gui
+   password: 123
+   
+   if there are any issues please email us at g_ghalehpardaz@fanshaweonline.ca or g_dasilva92543@fanshaweonline.ca
+
 ******************************************************************************************************************************
 
 
