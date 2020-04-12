@@ -37,22 +37,33 @@ h7{
 .cloud img{
     width: 75px;
     margin-top: 10px;
+    margin-left: -30px;
 
+}
+
+.sign{
+    margin: 0 auto;
+    display: block;
 }
 
 .sign h1{
     text-align: center;
     color: white;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
+
 .login{
     display: block;
     margin: 0 auto;
 }
 #loginForm{
-    background-color: rgba(1,1,1, 0.6);
+    background-color: rgba(1,1,1,0.6);
     width: 300px;
-    height: 105%;
+    height: 100%;
     display: block;
+    margin-top: 20px;
   }
 
   .profilePic{
@@ -70,14 +81,14 @@ h7{
     margin: 0 auto;
     display: block;
     width: 250px;
-    margin-top: -45px;
+    margin-top: -10px;
   }
   
   input.passwordInput{
     margin: 0 auto;
     display: block;
     width: 250px;
-    margin-top: -45px;
+    margin-top: -10px;
   }
 
   .loginLabel h5{
@@ -312,8 +323,9 @@ ul.kid h1{
 //dashboard
 
 .dash{
-    margin: 0 auto;
+    margin-left: 20%;
     display: block;
+
 
 }
 .dash h1{
@@ -511,14 +523,14 @@ h7{
     margin: 0 auto;
     display: block;
     width: 250px;
-    margin-top: -45px;
+    margin-top: -10px;
   }
   
   input.passwordInput{
     margin: 0 auto;
     display: block;
     width: 250px;
-    margin-top: -45px;
+    margin-top: -10px;
   }
 
   .loginLabel h5{
@@ -823,7 +835,7 @@ footer{
       }
       
       .logo img{
-        width: 10%;
+        width: 15%;
         padding-top: 10px;
         padding-left: 10px;
         margin: 0 auto;
@@ -839,7 +851,7 @@ footer{
     .cloud img{
         width: 75px;
         margin-top: -30px;
-        margin-left: 165px;
+        margin-left: 190px;
     
     }
     
@@ -847,11 +859,6 @@ footer{
 
 .profilePic{
     width: 5%;
-}
-
-.sign{
-    margin: 0 auto;
-    display: block;
 }
 
 .filterNav ul{
@@ -901,6 +908,13 @@ footer{
     padding-bottom: 15px;
     padding-top: 15px;
 }
+
+.sign{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
     
 
 .sign h1{
@@ -914,7 +928,7 @@ footer{
     margin: 0 auto;
 }
 #loginForm{
-    background-color: rgba(1,1,1, 0.6);
+    background-color: rgba(1,1,1,0.6);
     width: 500px;
     height: 110%;
     display: block;
@@ -930,14 +944,14 @@ footer{
     margin: 0 auto;
     display: block;
     width: 250px;
-    margin-top: -45px;
+    margin-top: -10px;
   }
   
   input.passwordInput{
     margin: 0 auto;
     display: block;
     width: 250px;
-    margin-top: -45px;
+    margin-top: -10px;
   }
 
   .loginLabel h5{
