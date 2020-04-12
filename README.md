@@ -16,6 +16,8 @@ Video controls are that of youtube because it is one of the most widely recogniz
 
 Instructions: 
 
+Place file in Htdocs folder and open with MAMP
+
 To Login:
 Username: foo
 password: bar
