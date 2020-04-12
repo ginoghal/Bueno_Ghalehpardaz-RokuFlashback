@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 11-Abr-2020 às 19:01
+-- Tempo de geração: 12-Abr-2020 às 00:01
 -- Versão do servidor: 10.4.10-MariaDB
 -- versão do PHP: 7.4.0
 
@@ -184,7 +184,7 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `user_blocked`, `first_time`, `user_tryCount`, `user_avatar`) VALUES
-(2, 'guilherme', 'gui', 'nLLr', '12351', '2020-02-12 19:36:23', '::1', 0, 0, 0, 'fooBar.jpg'),
+(2, 'guilherme', 'gui', 'w8yUzg==', '12351', '2020-02-12 19:36:23', '::1', 0, 0, 0, 'fooBar.jpg'),
 (24, 'gui', 'foo', 'z+Gq', 'guilhermebueno6@gmail.com', '2020-03-07 06:51:28', '::1', NULL, 0, 0, 'fooBar.jpg'),
 (27, 'Guilherme', 'Hi gino, you fuck', 'n8ukKZNUdbs=', 'gui@gui.com', '2020-03-18 20:00:31', 'no', NULL, 1, 0, 'fooBar.jpg');
 COMMIT;

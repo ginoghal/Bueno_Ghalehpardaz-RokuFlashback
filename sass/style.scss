@@ -349,6 +349,32 @@ ul.kid h1{
     cursor: pointer;
 }
 
+//user customize
+
+.change {
+    margin-top: 50px;
+    display: block; 
+    width: 100%;
+}
+
+.change h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.change a{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 40px;
+    font-style: italic;
+    text-decoration: none;
+}
 
 //edit user
 
@@ -364,6 +390,8 @@ div.editMe h2{
     font-size: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
 
 }
 
@@ -390,7 +418,8 @@ div.editMe button{
     margin: 0 auto;
     display: block;
     box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
-cursor: cursor;}
+    cursor: pointer;
+}
 
 //footer
 
@@ -533,6 +562,8 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
         padding-right: 25px;
     }
 
+    
+
 
 .filterNavKids ul li a{
     padding-bottom: 20px;
@@ -644,6 +675,32 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+//user customize
+
+.change {
+    margin-top: 50px;
+    display: block; 
+    width: 100%;
+}
+
+.change h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.change a{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
 //video
 
 .movie-itemVideo{
@@ -698,7 +755,51 @@ box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
     color: white;
     font-style: italic;
     cursor: pointer;
-    
+}
+
+//edit user
+
+div.editMe{
+    margin: 20px auto;
+    display: block;
+    width: 70%;
+    background-color: #662D91;
+    height: 85%;
+}
+
+div.editMe h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+div.editMe label {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    display: block;
+    padding-bottom: 1px;
+}
+
+div.editMe input{
+    margin: 0 auto;
+    display: block;
+    width: 95%;
+}
+
+div.editMe button{
+    background-color: whitesmoke;
+    width: 95%;
+    height: 50px;
+    margin-top: -10px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
+    cursor: pointer;
 }
 
 //footer
@@ -988,6 +1089,82 @@ font-size: 20px;
     cursor: pointer;
     
 }
+
+//user customize
+
+.change {
+    margin-top: 50px;
+    display: block; 
+    width: 100%;
+}
+
+.change h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+
+.change a{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 40px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+//edit user
+
+div.editMe{
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    background-color: #662D91;
+    height: 85%;
+}
+
+div.editMe h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+div.editMe label {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    display: block;
+    padding-bottom: 1px;
+}
+
+div.editMe input{
+    margin: 0 auto;
+    display: block;
+    width: 95%;
+}
+
+div.editMe button{
+    background-color: whitesmoke;
+    width: 95%;
+    height: 50px;
+    margin-top: -10px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 60px -10px rgba(102,45,145,0.6);
+    cursor: pointer;
+}
+
+
+
 
 //footer
 

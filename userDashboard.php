@@ -58,7 +58,6 @@ if(isset($_GET['series_id'])){
     <?php endif;?>
     </div>
 
-    <?php include 'templates/footer.php'; ?>
 
 </body>
 </html>

@@ -81,7 +81,7 @@ function createUser($fname, $username, $email){
             $bodyContent = '<h1>Your username is '.$username.' and your password is '.$password.' <br>Use the following URL too login into the system http://localhost/DaSilva_G_Teves_J_3014_r2/admin/admin_login.php';
 
 
-            $mail->Subject = 'Welcome to the Movie CMS';
+            $mail->Subject = 'Welcome to the Roku Flashback';
             $mail->addAddress($email);   // Add a recipient
             $mail->Body    = $bodyContent;
 
